@@ -23,4 +23,8 @@ Route::get('blog', function () {
     return view('blog');
 });
 Route::get('dosen', 'App\Http\Controllers\DosenController@index');
+Route::get('/siswa/{nama}', 'App\Http\Controllers\SiswaController@index');
+Route::get('/formulir', 'App\Http\Controllers\SiswaController@formulir');
+Route::post('/formulir/proses', 'App\Http\Controllers\SiswaController@proses');
+
 
