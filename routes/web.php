@@ -27,4 +27,11 @@ Route::get('/siswa/{nama}', 'App\Http\Controllers\SiswaController@index');
 Route::get('/formulir', 'App\Http\Controllers\SiswaController@formulir');
 Route::post('/formulir/proses', 'App\Http\Controllers\SiswaController@proses');
 
+// sistem template laravel \\
+
+Route::get('/blog', 'App\Http\Controllers\BlogController@home');
+Route::get('/blog/home', 'App\Http\Controllers\BlogController@home');
+Route::get('/blog/tentang','App\Http\Controllers\BlogController@tentang');
+Route::get('blog/kontak','App\Http\Controllers\BlogController@kontak');
+
 
