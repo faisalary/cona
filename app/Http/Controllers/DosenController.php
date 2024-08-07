@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 class DosenController extends Controller
 {
     public function index(){
-        return ('nama');
+        $nama = "Faisal Gunawan";
+        $kerja = ["bersih bersih", "Bantu bantu", "masak"];
+        return view ('nama', ['nama' => $nama , 'kerja' => $kerja]);
     }
 }
