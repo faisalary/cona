@@ -35,3 +35,7 @@ Route::get('/blog/tentang','App\Http\Controllers\BlogController@tentang');
 Route::get('blog/kontak','App\Http\Controllers\BlogController@kontak');
 
 
+
+
+
+
